@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="/public/styles/styles.css">
+  <title>Form Validator</title>
+</head>
+
+<body>
+  <div class="container">
+    <form data-form="form" class="form">
+      <h2>Register with Us</h2>
+      <div class="form__control">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          data-field="field"
+          placeholder="Enter username"
+        >
+        <small>Error message</small>
+      </div>
+
+      <div class="form__control">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          data-field="field"
+          placeholder="Enter email"
+        >
+        <small>Error message</small>
+      </div>
+
+      <div class="form__control">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          data-field="field"
+          placeholder="Enter password"
+        >
+        <small>Error message</small>
+      </div>
+
+      <div class="form__control">
+        <label for="password">Confirm Password</label>
+        <input
+          type="password"
+          id="confirm"
+          data-field="field"
+          placeholder="Enter password again"
+        >
+        <small>Error message</small>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="./js/index.js" async=""></script>
+</body>
+
+</html>
