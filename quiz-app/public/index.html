@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <script src="/src/js/index.js" defer></script>
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="intro py-3 bg-primary text-center">
+      <div class="container">
+        <h2 class="text-light display-3 my-4">Quiz</h2>
+      </div>
+    </div>
+
+    <div class="quiz py-4 bg-dark">
+      <div class="container">
+        <h2 class="my-5 text-white">
+          Você consegue acertar qual é o filme pelo título em português de
+          Portugal?
+        </h2>
+
+        <form class="quiz-form text-light">
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              1. "O Mal Disposto" é o nome dado para o filme:
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion1" value="A" checked />
+                Psicose
+              </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion1" value="B" />
+                Meu Malvado Favorito
+              </label>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              2. "O Aviso" é o nome dado para o filme de terror:
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion2" value="A" checked />
+                O Grito
+              </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion2" value="B" />
+                O Chamado
+              </label>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              3. "Uma Família a Beira de um Ataque de Nervos" é o título de:
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion3" value="A" checked />
+                Família do Bagulho
+              </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion3" value="B" />
+                Pequena Miss Sunshine
+              </label>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              4. "O Rei dos Gazeteiros" é o famoso filme:
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion4" value="A" checked />
+                O Lobo de Wall Street
+              </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <label class="form-check-label">
+                <input type="radio" name="inputQuestion4" value="B" />
+                Curtindo a Vida Adoidado
+              </label>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button class="btn bg-primary text-light">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
