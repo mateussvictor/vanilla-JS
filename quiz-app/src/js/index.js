@@ -34,3 +34,15 @@ const showFinalScore = () => {
   })
   finalScoreContainer.classList.remove('d-none')
 }
+
+const animateFinalScore = () => {
+  let counter = 0
+
+  const timer = setInterval(() => {
+    if (counter === score) {
+      clearInterval(timer)
+    }
+
+    finalScoreContainer.querySelector('span').textContent = `${counter++}%`
+  }, 10)
+}
