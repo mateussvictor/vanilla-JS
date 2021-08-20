@@ -46,3 +46,15 @@ const animateFinalScore = () => {
     finalScoreContainer.querySelector('span').textContent = `${counter++}%`
   }, 10)
 }
+
+form.addEventListener('submit', event => {
+  event.preventDefault()
+
+  const userAnswers = getUserAnswers()
+
+  calculateUserScore(userAnswers)
+
+  showFinalScore()
+
+  animateFinalScore()
+})
