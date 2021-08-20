@@ -15,3 +15,13 @@ const getUserAnswers = () => {
 
   return userAnswers
 }
+
+const calculateUserScore = userAnswers => {
+  userAnswers.forEach((answer, index) => {
+    const isUserAnswerCorrect = answer === correctAnswers[index]
+
+    if (isUserAnswerCorrect) {
+      score += 25
+    }
+  })
+}
