@@ -25,3 +25,12 @@ const calculateUserScore = userAnswers => {
     }
   })
 }
+
+const showFinalScore = () => {
+  scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  })
+  finalScoreContainer.classList.remove('d-none')
+}
