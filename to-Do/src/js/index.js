@@ -12,8 +12,6 @@ const addTodo = inputValue => {
         <i class="far fa-trash-alt" data-trash="${inputValue}"></i>
       </li>
     `
-
-    event.target.reset()
   }
 }
 
@@ -22,6 +20,7 @@ formAddToDo.addEventListener('submit', event => {
 
   const inputValue = event.target.add.value.trim()
   addTodo(inputValue)
+  event.target.reset()
 })
 
 const removeTodo = clickedElement => {
